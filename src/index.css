@@ -1,0 +1,57 @@
+:root {
+  --c-1: #0B090A;
+  --c-2: #161A1D;
+  --c-3: #660708;
+  --c-4: #A4161A;
+  --c-5: #BA181B;
+  --c-6: #E5383B;
+  --c-7: #B1A7A6;
+  --c-8: #D3D3D3;
+  --c-9: #F5F3F4;
+  --c-10: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100dvh;
+  background: var(--c-1);
+  color: var(--c-10);
+  transition: background .5s linear;
+  will-change: background;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--c-10);
+}
+
+
+
+
+
+
+.screen {
+  width: calc(100% - 4.5rem);
+  height: 100dvh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 2rem 3rem;
+}
+.screen::-webkit-scrollbar {
+  width: 0;
+}

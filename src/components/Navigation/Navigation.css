@@ -1,0 +1,22 @@
+.nav {
+  position: fixed;
+  top: 0;
+  right: .5rem;
+  width: 4rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__button {
+  font-size: 2rem;
+  opacity: .5;
+}
+.nav__button:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.nav__button:is(:active, .active) {
+  opacity: 1;
+}
